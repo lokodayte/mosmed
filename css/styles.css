@@ -179,6 +179,9 @@ address { font-style: normal; }
   html, body { overflow-x: hidden; max-width: 100vw; }
   .nav-logo .logo-img { max-width: 55vw; }
   #site-header { overflow: hidden; }
+  .founder-photo-wrap::after { display: none; }
+  .hero { overflow: hidden; }
+  * { max-width: 100%; }
 }
 
 :focus-visible { outline: 2px solid var(--color-amber); outline-offset: 3px; border-radius: 3px; }
