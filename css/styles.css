@@ -150,6 +150,16 @@ address { font-style: normal; }
   align-items: center;
 }
 
+.nav-logo .logo-img {
+  height: 44px;
+  width: auto;
+}
+
+.footer-logo .logo-img {
+  height: 36px;
+  width: auto;
+}
+
 .logo-fallback {
   font-family: var(--font-heading);
   font-size: 1.65rem;
