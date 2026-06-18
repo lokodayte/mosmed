@@ -43,7 +43,7 @@ Then in `index.html` update the `href` attributes:
 
 ### 3. Logo & portrait
 Drop the actual files into `/assets/`:
-- `logo.png` — the MOSMED logo (also works with `logo.svg`)
+- `mosmedlogo.png` — the MOSMED logo (current file name — update the src in index.html if you rename it)
 - `founder.jpg` — a professional portrait photo (3:4 ratio recommended)
 
 ---
