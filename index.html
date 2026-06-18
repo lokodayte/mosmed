@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="MOSMED — trusted Armenian distributor of advanced and robotic medical technology." />
+  <title>MOSMED — Robotic Technologies in Medicine</title>
+
+  <!-- Google Fonts: Cormorant Garamond (serif headings) + Inter (body) -->
+  <!-- Note: Cormorant Garamond has no Armenian/Cyrillic glyphs.
+       CSS font-stack falls back to Noto Serif for AM/RU heading text. -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600&family=Noto+Serif:ital,wght@0,400;0,700;1,400&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+
+  <!-- ════════════════════════════════════════════════════════════════════════
+       HEADER / NAVBAR
+  ════════════════════════════════════════════════════════════════════════ -->
+  <header id="site-header" role="banner">
+    <nav class="nav container" aria-label="Main navigation">
+
+      <!-- Logo -->
+      <a href="#hero" class="nav-logo" aria-label="MOSMED — home">
+        <img
+          class="logo-img"
+          src="assets/logo.png"
+          data-i18n-alt="logo_alt"
+          alt="MOSMED logo"
+          width="140"
+          height="48"
+        />
+        <!-- Shown only if logo.png fails to load -->
+        <span class="logo-fallback" aria-hidden="true" style="display:none">MOSMED</span>
+      </a>
+
+      <!-- Mobile hamburger -->
+      <button
+        id="nav-toggle"
+        class="nav-toggle"
+        aria-controls="nav-menu"
+        aria-expanded="false"
+        aria-label="Toggle navigation menu"
+      >
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+      </button>
+
+      <!-- Nav links + language switcher -->
+      <div id="nav-menu" class="nav-menu">
+        <ul class="nav-links" role="list">
+          <li><a href="#about" data-i18n="nav_about">About</a></li>
+          <li><a href="#founder" data-i18n="nav_founder">Founder</a></li>
+          <li><a href="#why" data-i18n="nav_why">Why MOSMED</a></li>
+          <li><a href="#contact" data-i18n="nav_contact">Contact</a></li>
+        </ul>
+
+        <!-- Language switcher -->
+        <div class="lang-switcher" role="group" aria-label="Language selection">
+          <button class="lang-btn" data-lang="am" aria-pressed="false">AM</button>
+          <button class="lang-btn" data-lang="ru" aria-pressed="false">RU</button>
+          <button class="lang-btn lang-btn--active" data-lang="en" aria-pressed="true">EN</button>
+        </div>
+      </div>
+
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ════════════════════════════════════════════════════════════════════════
+         HERO
+    ════════════════════════════════════════════════════════════════════════ -->
+    <section id="hero" class="hero" aria-label="Hero">
+      <div class="hero-bg-accent" aria-hidden="true"></div>
+      <div class="container hero-inner">
+
+        <!-- Wordmark -->
+        <p class="hero-wordmark" aria-hidden="true">MOSMED</p>
+
+        <!-- Latin slogan -->
+        <h1 class="hero-slogan">
+          <span data-i18n="hero_slogan">Sic itur ad astra</span>
+        </h1>
+        <p class="hero-slogan-translation">
+          <em data-i18n="hero_slogan_translation">Thus one journeys to the stars</em>
+        </p>
+
+        <!-- Tagline -->
+        <p class="hero-tagline" data-i18n="hero_tagline">Robotic technologies in medicine</p>
+
+        <!-- Positioning statement -->
+        <p class="hero-body" data-i18n="hero_body">
+          MOSMED connects world-class medical and robotic technology manufacturers with Armenian healthcare institutions — bringing the most advanced equipment to those who need it most.
+        </p>
+
+        <a href="#about" class="btn btn--primary" data-i18n="hero_cta">Learn more</a>
+      </div>
+
+      <!-- Decorative amber arc -->
+      <div class="hero-arc" aria-hidden="true"></div>
+    </section>
+
+    <!-- ════════════════════════════════════════════════════════════════════════
+         ABOUT
+    ════════════════════════════════════════════════════════════════════════ -->
+    <section id="about" class="section section--cream" aria-labelledby="about-heading">
+      <div class="container">
+        <div class="section-label fade-in" aria-hidden="true">01</div>
+        <h2 id="about-heading" class="section-heading fade-in" data-i18n="about_heading">
+          About MOSMED
+        </h2>
+        <div class="about-body">
+          <p class="body-text fade-in" data-i18n="about_p1">
+            MOSMED is a Yerevan-based distribution company specialising in advanced and robotic medical technology.
+          </p>
+          <p class="body-text fade-in" data-i18n="about_p2">
+            Our partnerships are built on rigorous due diligence and long-term commitment.
+          </p>
+          <p class="body-text fade-in" data-i18n="about_p3">
+            Armenia's healthcare sector is growing steadily.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════════════════════════════════════════════
+         FOUNDER
+         <!-- FOUNDER BIO: Replace founder_name, founder_title, founder_p1,
+              founder_p2, and founder_quote in js/translations.js.
+              Swap assets/founder.jpg with the actual portrait photo. -->
+    ════════════════════════════════════════════════════════════════════════ -->
+    <section id="founder" class="section section--white" aria-labelledby="founder-heading">
+      <div class="container">
+        <div class="section-label fade-in" aria-hidden="true">02</div>
+        <h2 id="founder-heading" class="section-heading fade-in" data-i18n="founder_heading">
+          Our Founder
+        </h2>
+
+        <div class="founder-grid">
+
+          <!-- Portrait -->
+          <div class="founder-photo-wrap fade-in">
+            <!--
+              FOUNDER PHOTO: Replace src="assets/founder.jpg" with actual portrait.
+              Recommended: professional headshot, neutral background, 600×800px minimum.
+            -->
+            <div class="founder-photo-placeholder" aria-hidden="true">
+              <img
+                src="assets/founder.jpg"
+                data-i18n-alt="founder_photo_alt"
+                alt="Portrait of the MOSMED founder"
+                class="founder-photo"
+                onerror="this.style.display='none';this.nextElementSibling.style.display='flex';"
+              />
+              <div class="founder-photo-fallback" style="display:none" aria-hidden="true">
+                <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true">
+                  <circle cx="12" cy="8" r="4"/>
+                  <path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bio -->
+          <div class="founder-bio fade-in">
+            <h3 class="founder-name" data-i18n="founder_name">[FOUNDER NAME]</h3>
+            <p class="founder-title" data-i18n="founder_title">[Title / Specialisation / Credentials]</p>
+
+            <p class="body-text" data-i18n="founder_p1">[Founder biography paragraph 1 — placeholder]</p>
+            <p class="body-text" data-i18n="founder_p2">[Founder biography paragraph 2 — placeholder]</p>
+
+            <blockquote class="founder-quote">
+              <p data-i18n="founder_quote">"The painting on my operating-room wall…"</p>
+            </blockquote>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════════════════════════════════════════════
+         WHY MOSMED
+    ════════════════════════════════════════════════════════════════════════ -->
+    <section id="why" class="section section--cream" aria-labelledby="why-heading">
+      <div class="container">
+        <div class="section-label fade-in" aria-hidden="true">03</div>
+        <h2 id="why-heading" class="section-heading fade-in" data-i18n="why_heading">
+          Why Partner with MOSMED
+        </h2>
+
+        <div class="cards-grid">
+
+          <!-- Card 1 -->
+          <article class="card fade-in" aria-labelledby="card1-heading">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"/>
+                <path d="M12 2a14.5 14.5 0 0 1 0 20M2 12h20M12 2a14.5 14.5 0 0 0 0 20"/>
+              </svg>
+            </div>
+            <h3 id="card1-heading" class="card-heading" data-i18n="why_card1_heading">Direct Manufacturer Partnerships</h3>
+            <p class="card-body" data-i18n="why_card1_body">We negotiate directly with global manufacturers.</p>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="card fade-in" aria-labelledby="card2-heading">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+                <polyline points="9 22 9 12 15 12 15 22"/>
+              </svg>
+            </div>
+            <h3 id="card2-heading" class="card-heading" data-i18n="why_card2_heading">Established Hospital Network</h3>
+            <p class="card-body" data-i18n="why_card2_body">Trusted relationships with leading hospitals and clinics across Armenia.</p>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="card fade-in" aria-labelledby="card3-heading">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                <path d="M2 17l10 5 10-5"/>
+                <path d="M2 12l10 5 10-5"/>
+              </svg>
+            </div>
+            <h3 id="card3-heading" class="card-heading" data-i18n="why_card3_heading">Advanced &amp; Robotic Technology Focus</h3>
+            <p class="card-body" data-i18n="why_card3_body">We specialise exclusively in high-value, innovative medical technology.</p>
+          </article>
+
+          <!-- Card 4 -->
+          <article class="card fade-in" aria-labelledby="card4-heading">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12"/>
+              </svg>
+            </div>
+            <h3 id="card4-heading" class="card-heading" data-i18n="why_card4_heading">Professional &amp; Transparent</h3>
+            <p class="card-body" data-i18n="why_card4_body">Clear contracts, reliable communication, and full transparency.</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════════════════════════════════════════════
+         CONTACT
+         <!-- CONTACT DETAILS: Fill in phone and email in js/translations.js
+              (keys: contact_phone, contact_email) -->
+    ════════════════════════════════════════════════════════════════════════ -->
+    <section id="contact" class="section section--white" aria-labelledby="contact-heading">
+      <div class="container">
+        <div class="section-label fade-in" aria-hidden="true">04</div>
+        <h2 id="contact-heading" class="section-heading fade-in" data-i18n="contact_heading">
+          Contact Us
+        </h2>
+
+        <p class="contact-intro body-text fade-in" data-i18n="contact_intro">
+          We welcome enquiries from international medical technology manufacturers and suppliers.
+        </p>
+
+        <div class="contact-grid">
+
+          <!-- Details -->
+          <div class="contact-details fade-in">
+
+            <div class="contact-item">
+              <span class="contact-label" data-i18n="contact_address_label">Office Address</span>
+              <address class="contact-value" data-i18n="contact_address" data-i18n-html="true">
+                Nalbandyan St, Building 50, Apt. 26<br>Yerevan, Armenia
+              </address>
+            </div>
+
+            <div class="contact-item">
+              <span class="contact-label" data-i18n="contact_phone_label">Telephone</span>
+              <!--
+                PHONE: Replace the href value and text content below,
+                or update contact_phone in js/translations.js.
+              -->
+              <a href="tel:+374XXXXXXXX" class="contact-value contact-link" data-i18n="contact_phone">
+                +374 [FILL IN PHONE]
+              </a>
+            </div>
+
+            <div class="contact-item">
+              <span class="contact-label" data-i18n="contact_email_label">Email</span>
+              <!--
+                EMAIL: Replace the href value and text content below,
+                or update contact_email in js/translations.js.
+              -->
+              <a href="mailto:info@mosmed.am" class="contact-value contact-link" data-i18n="contact_email">
+                [FILL IN EMAIL]
+              </a>
+            </div>
+
+          </div>
+
+          <!-- Map -->
+          <div class="contact-map fade-in">
+            <iframe
+              data-i18n-title="map_title"
+              title="MOSMED office location"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d775.8!2d44.5138!3d40.1852!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x406abd26b6f00001%3A0x0!2sNalbandyan+St+50%2C+Yerevan%2C+Armenia!5e0!3m2!1sen!2s!4v1"
+              width="100%"
+              height="360"
+              style="border:0;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ════════════════════════════════════════════════════════════════════════
+       FOOTER
+  ════════════════════════════════════════════════════════════════════════ -->
+  <footer id="site-footer" role="contentinfo">
+    <div class="container footer-inner">
+
+      <div class="footer-brand">
+        <a href="#hero" class="nav-logo footer-logo" aria-label="MOSMED — back to top">
+          <img
+            class="logo-img"
+            src="assets/logo.png"
+            data-i18n-alt="logo_alt"
+            alt="MOSMED logo"
+            width="100"
+            height="34"
+          />
+          <span class="logo-fallback" style="display:none" aria-hidden="true">MOSMED</span>
+        </a>
+        <p class="footer-tagline" data-i18n="footer_tagline">Robotic technologies in medicine</p>
+      </div>
+
+      <p class="footer-copyright" data-i18n="footer_copyright">© 2025 MOSMED. All rights reserved.</p>
+
+      <!-- Language switcher repeated in footer -->
+      <div class="lang-switcher lang-switcher--footer" role="group" aria-label="Language selection">
+        <button class="lang-btn" data-lang="am" aria-pressed="false">AM</button>
+        <button class="lang-btn" data-lang="ru" aria-pressed="false">RU</button>
+        <button class="lang-btn lang-btn--active" data-lang="en" aria-pressed="true">EN</button>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/translations.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
