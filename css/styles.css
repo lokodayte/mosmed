@@ -125,13 +125,8 @@ address { font-style: normal; }
   top: 0;
   z-index: 100;
   background: #ffffff;
-  border-bottom: 1px solid transparent;
-  transition: border-color var(--transition), box-shadow var(--transition);
-}
-
-#site-header.header--scrolled {
-  border-color: var(--color-border);
-  box-shadow: 0 2px 24px var(--color-shadow);
+  border-bottom: 1px solid var(--color-border);
+  box-shadow: 0 1px 12px var(--color-shadow);
 }
 
 .nav {
@@ -139,7 +134,7 @@ address { font-style: normal; }
   align-items: center;
   justify-content: space-between;
   gap: var(--space-md);
-  height: 160px;
+  height: 72px;
 }
 
 .nav-logo {
@@ -149,20 +144,13 @@ address { font-style: normal; }
 }
 
 .nav-logo .logo-img {
-  height: 150px;
+  height: 48px;
   width: auto;
 }
 
 .footer-logo .logo-img {
-  height: 80px;
+  height: 64px;
   width: auto;
-}
-
-/* Large logo in the hero section */
-.hero-logo {
-  height: 250px;
-  width: auto;
-  margin-bottom: var(--space-md);
 }
 
 .logo-fallback {
@@ -257,116 +245,63 @@ address { font-style: normal; }
 .nav-toggle--open .hamburger-bar:nth-child(3) { transform: translateY(-6.5px) rotate(-45deg); }
 
 /* ── 6. Hero ──────────────────────────────────────────────────────────────── */
-/*
-  Same cream background — but structured with a large geometric
-  amber circle on the right and a diagonal bottom cut to break the
-  monotony without changing any color.
-*/
 .hero {
   position: relative;
-  background: var(--color-cream);
+  /* Cream base with a warm radial glow in the centre — matches screenshot */
+  background: radial-gradient(ellipse 70% 60% at 50% 45%,
+    #ede5d0 0%,
+    var(--color-cream) 100%);
   padding-top: clamp(5rem, 12vw, var(--space-2xl));
   padding-bottom: clamp(5rem, 11vw, 8rem);
   overflow: hidden;
-  isolation: isolate;
-}
-
-/* Large decorative circle — right side, amber outline */
-.hero-bg-accent {
-  position: absolute;
-  top: 50%;
-  right: -12%;
-  transform: translateY(-50%);
-  width: min(560px, 70vw);
-  height: min(560px, 70vw);
-  border-radius: 50%;
-  border: 1px solid rgba(229, 154, 60, 0.22);
-  pointer-events: none;
-  z-index: 0;
-}
-
-/* Inner concentric ring */
-.hero-bg-accent::before {
-  content: '';
-  position: absolute;
-  inset: 18%;
-  border-radius: 50%;
-  border: 1px solid rgba(229, 154, 60, 0.12);
-}
-
-/* Inner dot */
-.hero-bg-accent::after {
-  content: '';
-  position: absolute;
-  inset: 40%;
-  border-radius: 50%;
-  background: rgba(229, 154, 60, 0.07);
-}
-
-/* Diagonal bottom cut into the white section below */
-.hero-arc {
-  position: absolute;
-  bottom: -1px;
-  left: 0;
-  width: 100%;
-  height: 80px;
-  background: var(--color-white);
-  clip-path: polygon(0 100%, 100% 100%, 100% 30%, 0 100%);
-  pointer-events: none;
 }
 
 .hero-inner {
-  position: relative;
-  z-index: 1;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;   /* centred — matches screenshot */
+  text-align: center;
   max-width: 780px;
+  margin-inline: auto;
 }
 
-/* Small eyebrow label above the slogan */
+/* "MOSMED" large caps wordmark */
 .hero-wordmark {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.75rem;
-  font-size: 0.65rem;
-  font-weight: 700;
-  letter-spacing: 0.45em;
-  color: var(--color-amber);
+  font-family: var(--font-heading);
+  font-size: clamp(2.8rem, 7vw, 5.5rem);
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  color: var(--color-slate);
   text-transform: uppercase;
-  margin-bottom: var(--space-md);
+  margin-bottom: 0.5rem;
+  line-height: 1;
 }
 
-.hero-wordmark::before {
-  content: '';
-  display: block;
-  width: 32px;
-  height: 1.5px;
-  background: var(--color-amber);
-}
-
+/* Hide the h1 slogan text — shown as italic amber below wordmark */
 .hero-slogan {
   font-family: var(--font-heading);
-  font-size: clamp(3rem, 8.5vw, 6.5rem);
-  font-weight: 600;
-  color: var(--color-slate);
-  line-height: 1.02;
-  letter-spacing: -0.03em;
-  margin-bottom: 0.5rem;
+  font-size: clamp(1.5rem, 3.5vw, 2.4rem);
+  font-weight: 400;
+  font-style: italic;
+  color: var(--color-amber);
+  line-height: 1.15;
+  letter-spacing: 0.01em;
+  margin-bottom: 0.6rem;
 }
 
 :lang(hy) .hero-slogan,
 :lang(ru) .hero-slogan {
   font-family: 'Noto Serif', Georgia, serif;
-  font-size: clamp(2.4rem, 6vw, 5rem);
+  font-size: clamp(1.3rem, 2.8vw, 2rem);
 }
 
 .hero-slogan-translation {
-  font-family: var(--font-heading);
-  font-size: clamp(1rem, 2vw, 1.3rem);
-  font-style: italic;
-  color: var(--color-amber-dark);
+  font-family: var(--font-body);
+  font-size: clamp(0.9rem, 1.5vw, 1.05rem);
+  font-style: normal;
+  color: var(--color-slate-light);
   margin-bottom: var(--space-lg);
+  letter-spacing: 0.01em;
 }
 
 :lang(hy) .hero-slogan-translation,
@@ -374,30 +309,12 @@ address { font-style: normal; }
   font-family: 'Noto Serif', Georgia, serif;
 }
 
-.hero-tagline {
-  font-size: 0.72rem;
-  font-weight: 600;
-  letter-spacing: 0.22em;
-  text-transform: uppercase;
-  color: var(--color-slate-light);
-  margin-bottom: var(--space-sm);
-}
-
-/* Thin amber rule separating tagline from body copy */
-.hero-divider {
-  width: 48px;
-  height: 1.5px;
-  background: var(--color-amber);
-  margin-bottom: var(--space-md);
-  border-radius: 2px;
-}
-
 .hero-body {
-  font-size: clamp(1rem, 1.8vw, 1.12rem);
+  font-size: clamp(1rem, 1.6vw, 1.1rem);
   line-height: 1.78;
   color: var(--color-slate-light);
-  max-width: 58ch;
-  margin-bottom: var(--space-lg);
+  max-width: 54ch;
+  font-weight: 400;
 }
 
 /* ── 7. Button ────────────────────────────────────────────────────────────── */
@@ -727,7 +644,7 @@ address { font-style: normal; }
 
   .nav-menu {
     position: absolute;
-    top: 160px;
+    top: 72px;
     left: 0;
     right: 0;
     background: rgba(241, 235, 220, 0.98);
