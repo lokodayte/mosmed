@@ -167,18 +167,10 @@ address { font-style: normal; }
 .section--white { background: var(--color-white); }
 .section--cream { background: var(--color-cream); }
 
-.about-layout { display: grid; grid-template-columns: 1fr; gap: clamp(2.5rem, 6vw, 5rem); align-items: start; margin-top: var(--space-md); }
-@media (min-width: 860px) { .about-layout { grid-template-columns: 1fr 300px; } }
-.about-lead { font-family: var(--font-serif); font-size: clamp(1.25rem, 2.2vw, 1.6rem); font-weight: 500; color: var(--color-slate); line-height: 1.55; margin-bottom: 1.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid var(--color-border); }
-:lang(hy) .about-lead, :lang(ru) .about-lead { font-family: 'Noto Serif', Georgia, serif; }
-.about-body-p { font-size: clamp(0.95rem, 1.4vw, 1.02rem); color: var(--color-slate-mid); line-height: 1.9; }
-.about-highlights { display: flex; flex-direction: column; gap: 0; border-left: 1px solid var(--color-border); }
-@media (max-width: 859px) { .about-highlights { flex-direction: row; flex-wrap: wrap; border-left: none; border-top: 1px solid var(--color-border); padding-top: 1.5rem; gap: 1.5rem; } }
-.about-highlight-item { padding: 1.4rem 1.6rem; border-bottom: 1px solid var(--color-border); }
-@media (max-width: 859px) { .about-highlight-item { padding: 0; border-bottom: none; min-width: 120px; flex: 1; } }
-.about-highlight-num { display: block; font-family: var(--font-serif); font-size: clamp(2rem, 3.5vw, 2.8rem); font-weight: 600; color: var(--color-amber-dark); line-height: 1; margin-bottom: 0.4rem; letter-spacing: -0.02em; }
-.about-highlight-sup { font-size: 0.55em; vertical-align: super; font-weight: 400; }
-.about-highlight-label { display: block; font-size: 0.78rem; font-weight: 500; color: var(--color-slate-light); line-height: 1.4; letter-spacing: 0.01em; }
+.about-body { max-width: 72ch; }
+.about-body .body-text:first-child { font-family: var(--font-serif); font-size: clamp(1.15rem, 2vw, 1.35rem); font-weight: 500; color: var(--color-slate); line-height: 1.6; margin-bottom: 1.5rem; }
+:lang(hy) .about-body .body-text:first-child, :lang(ru) .about-body .body-text:first-child { font-family: 'Noto Serif', Georgia, serif; }
+.about-body .body-text:last-child { font-size: clamp(0.97rem, 1.4vw, 1.05rem); color: var(--color-slate-mid); line-height: 1.9; }
 
 /* ── Founder ── */
 .founder-grid { display: grid; grid-template-columns: 1fr; gap: var(--space-lg); margin-top: var(--space-md); }
