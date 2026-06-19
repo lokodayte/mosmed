@@ -106,12 +106,11 @@ address { font-style: normal; }
 .gallery-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; margin-top: var(--space-md); }
 @media (min-width: 768px) { .gallery-grid { grid-template-columns: repeat(3, 1fr); gap: 1.25rem; } }
 @media (min-width: 1024px) { .gallery-grid { grid-template-columns: repeat(5, 1fr); } }
-.gallery-item { display: flex; flex-direction: column; border-radius: var(--radius-md); overflow: hidden; margin: 0; background: var(--color-white); border: 1px solid var(--color-border); box-shadow: 0 2px 12px var(--color-shadow-sm); transition: transform 300ms ease, box-shadow 300ms ease; }
-.gallery-item:hover { transform: translateY(-3px); box-shadow: 0 8px 28px var(--color-shadow-md); }
-.gallery-item .gallery-img-wrap { aspect-ratio: 3/4; overflow: hidden; flex-shrink: 0; }
+.gallery-item { position: relative; overflow: hidden; border-radius: var(--radius-md); aspect-ratio: 3/4; margin: 0; background: var(--color-slate); }
 .gallery-item img { width: 100%; height: 100%; object-fit: cover; object-position: center; transition: transform 500ms ease; display: block; }
-.gallery-item:hover img { transform: scale(1.04); }
-.gallery-item figcaption { padding: 0.65rem 0.8rem 0.75rem; font-size: 0.72rem; line-height: 1.5; color: var(--color-slate-light); font-style: italic; border-top: 1px solid var(--color-border); background: var(--color-white); }
+.gallery-item:hover img { transform: scale(1.07); }
+.gallery-item figcaption { position: absolute; bottom: 0; left: 0; right: 0; padding: 2rem 0.85rem 0.85rem; background: linear-gradient(to top, rgba(20,26,36,0.92) 0%, transparent 100%); color: rgba(255,255,255,0.93); font-size: 0.72rem; line-height: 1.5; font-style: italic; transform: translateY(6px); opacity: 0; transition: opacity 320ms ease, transform 320ms ease; }
+.gallery-item:hover figcaption { opacity: 1; transform: translateY(0); }
 
 /* ── Press ── */
 .press-grid { display: grid; grid-template-columns: 1fr; gap: 1rem; margin-top: var(--space-md); }
@@ -170,7 +169,9 @@ address { font-style: normal; }
 .about-body { max-width: 72ch; }
 .about-body .body-text:first-child { font-family: var(--font-serif); font-size: clamp(1.15rem, 2vw, 1.35rem); font-weight: 500; color: var(--color-slate); line-height: 1.6; margin-bottom: 1.5rem; }
 :lang(hy) .about-body .body-text:first-child, :lang(ru) .about-body .body-text:first-child { font-family: 'Noto Serif', Georgia, serif; }
-.about-body .body-text:last-child { font-size: clamp(0.97rem, 1.4vw, 1.05rem); color: var(--color-slate-mid); line-height: 1.9; }
+.about-body .body-text { font-size: clamp(0.97rem, 1.4vw, 1.05rem); color: var(--color-slate-mid); line-height: 1.9; }
+.about-callout { margin-top: 1.75rem; padding: 1.25rem 1.5rem; border-left: 3px solid var(--color-amber); background: var(--color-amber-pale); border-radius: 0 var(--radius-sm) var(--radius-sm) 0; font-family: var(--font-serif); font-size: clamp(1rem, 1.6vw, 1.15rem); font-style: italic; color: var(--color-slate); line-height: 1.65; max-width: 68ch; }
+:lang(hy) .about-callout, :lang(ru) .about-callout { font-family: 'Noto Serif', Georgia, serif; }
 
 /* ── Founder ── */
 .founder-grid { display: grid; grid-template-columns: 1fr; gap: var(--space-lg); margin-top: var(--space-md); }

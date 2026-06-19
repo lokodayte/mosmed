@@ -60,9 +60,14 @@ const translations = {
     am: "Հիմնված Մոսոյան ընտանիքի կողմից 2025 թ.-ին՝ MOSMED-ը Երևանում գտնվող գլոբալ բժշկական տեխնոլոգիաների ինտեգրատոր է, որը մասնագիտանում է բժշկական ռոբոտաշինությամբ:",
   },
   about_p2: {
-    en: "In a rapidly growing healthcare sector, we recognized that simply delivering equipment is not enough. Our partnerships are built on rigorous due diligence, long-term commitment, and comprehensive clinical support. Led by world-class robotic surgeons and industry experts, we bridge the gap between global MedTech innovators and local healthcare institutions. We ensure that every piece of technology we introduce is backed by robust infrastructure, international training programs, and ongoing clinical proctoring.",
+    en: "In a rapidly growing healthcare sector, we recognized that simply delivering equipment is not enough. Our partnerships are built on rigorous due diligence, long-term commitment, and comprehensive clinical support. Led by world-class robotic surgeons and industry experts, we bridge the gap between global MedTech innovators and local healthcare institutions.",
     ru: "В условиях стремительно развивающегося сектора здравоохранения мы осознали, что простой поставки оборудования недостаточно. Наши партнёрства основаны на тщательной проверке, долгосрочных обязательствах и комплексной клинической поддержке. Под руководством хирургов-роботологов мирового класса и отраслевых экспертов мы устраняем разрыв между глобальными новаторами MedTech и местными учреждениями здравоохранения.",
     am: "Արագ աճող առողջապահական ոլորտում մենք գիտակցեցինք, որ պարզապես սարքավորումներ մատակարարելը բավական չէ: Մեր գործընկերությունները կառուցված են մանրակրկիտ ուսումնասիրության, երկարաժամկետ պարտավորության և համապարփակ կլինիկական աջակցության վրա: Առաջնորդվելով համաշխարհային մակարդակի ռոբոտ-վիրաբույժների կողմից՝ մենք կամուրջ ենք հանդիսանում գլոբալ MedTech նորարարների և տեղական բժշկական հիմնարկների միջև:",
+  },
+  about_p3_callout: {
+    en: "We ensure that every piece of technology we introduce is backed by robust infrastructure, international training programs, and ongoing clinical proctoring.",
+    ru: "Мы гарантируем, что каждая внедряемая нами технология подкреплена надёжной инфраструктурой, международными программами обучения и непрерывным клиническим прокторингом.",
+    am: "Մենք ապահովում ենք, որ մեր ներդրած յուրաքանչյուր տեխնոլոգիա ապահովված է հզոր ենթակառուցվածքով, միջազգային վերապատրաստման ծրագրերով և շարունակական կլինիկական պրոկտորինգով:",
   },
   about_h1: {
     en: "Founded in Yerevan",
@@ -285,9 +290,9 @@ const translations = {
 
   // ── News & Press ─────────────────────────────────────────────────────────────
   press_heading: {
-    en: "News & Press",
-    ru: "Новости и пресса",
-    am: "Նորություններ և մամուլ",
+    en: "Find Us Here",
+    ru: "Мы здесь",
+    am: "Գտեք մեզ այստեղ",
   },
   press_article1_title: {
     en: "First Robot-Assisted Surgery Performed in Armenia",
