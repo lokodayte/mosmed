@@ -1,19 +1,25 @@
 const translations = {
-  // ── Navigation ──────────────────────────────────────────────────────────────
+
+  // ── Navigation ───────────────────────────────────────────────────────────────
   nav_about: {
     en: "About",
     ru: "О нас",
     am: "Մեր մասին",
   },
-  nav_founder: {
-    en: "Founder",
-    ru: "Основатель",
-    am: "Հիմնադիր",
+  nav_expertise: {
+    en: "Expertise",
+    ru: "Направления",
+    am: "Մասնագիտություն",
   },
-  nav_why: {
-    en: "Why MOSMED",
-    ru: "Почему MOSMED",
-    am: "Ինչու MOSMED",
+  nav_media: {
+    en: "Media",
+    ru: "Медиа",
+    am: "Մեդիա",
+  },
+  nav_gallery: {
+    en: "In the Field",
+    ru: "В работе",
+    am: "Աշխատանքում",
   },
   nav_contact: {
     en: "Contact",
@@ -27,25 +33,15 @@ const translations = {
     ru: "Sic itur ad astra",
     am: "Sic itur ad astra",
   },
-  hero_slogan_translation: {
-    en: "Thus one journeys to the stars",
-    ru: "Так идут к звёздам",
-    am: "Այսպես են գնում դեպի աստղերը",
-  },
   hero_tagline: {
-    en: "Robotic technologies in medicine",
-    ru: "Роботизированные технологии в медицине",
-    am: "Ռոբոտային տեխնոլոգիաները բժշկության մեջ",
+    en: "Pioneering Robotic Surgery and Advanced Medical Technologies in the South Caucasus",
+    ru: "Развитие роботической хирургии и передовых медицинских технологий на Южном Кавказе",
+    am: "Ռոբոտային վիրաբուժության և առաջատար բժշկական տեխնոլոգիաների ռահվիրա Հարավային Կովկասում",
   },
   hero_body: {
-    en: "MOSMED connects world-class medical and robotic technology manufacturers with Armenian healthcare institutions — bringing the most advanced equipment to those who need it most.",
-    ru: "MOSMED соединяет ведущих мировых производителей медицинского и роботизированного оборудования с армянскими медицинскими учреждениями — доставляя самые передовые технологии тем, кто в них нуждается.",
-    am: "MOSMED-ը կապում է համաշխարհային առաջատար բժշկական և ռոբոտային տեխնոլոգիաների արտադրողներին հայկական բժշկական հաստատությունների հետ՝ ապահովելով ամենաառաջատար սարքավորումները:",
-  },
-  hero_cta: {
-    en: "Learn more",
-    ru: "Узнать больше",
-    am: "Իմանալ ավելին",
+    en: "MOSMED is the premier strategic partner and distributor for world-class robotic technologies in medicine. We deliver end-to-end clinical integration with world-class surgical training and proctoring.",
+    ru: "MOSMED — ведущий стратегический партнёр и дистрибьютор передовых роботизированных технологий в медицине. Мы обеспечиваем полный цикл клинической интеграции с хирургическим обучением и прокторингом мирового уровня.",
+    am: "MOSMED-ը բժշկության մեջ համաշխարհային մակարդակի ռոբոտային տեխնոլոգիաների առաջատար ռազմավարական գործընկերն ու բաշխողն է: Մենք ապահովում ենք կլինիկական ինտեգրման ամբողջական ցիկլ՝ վիրաբուժական ուսուցմամբ և պրոկտորինգով:",
   },
 
   // ── About ────────────────────────────────────────────────────────────────────
@@ -55,105 +51,130 @@ const translations = {
     am: "MOSMED-ի մասին",
   },
   about_p1: {
-    en: "MOSMED is a Yerevan-based distribution company specialising in advanced and robotic medical technology. We act as a trusted bridge between international manufacturers and the Armenian healthcare market, managing the full cycle from procurement and regulatory compliance through to delivery and after-sales support.",
-    ru: "MOSMED — ереванская дистрибьюторская компания, специализирующаяся на передовых и роботизированных медицинских технологиях. Мы выступаем надёжным мостом между международными производителями и армянским рынком здравоохранения, сопровождая полный цикл — от закупки и регуляторного соответствия до поставки и постпродажного обслуживания.",
-    am: "MOSMED-ը Երևանում գրանցված բաշխիչ ընկերություն է, որը մասնագիտանում է առաջատար և ռոբոտային բժշկական տեխնոլոգիաներում: Մենք հուսալի կամուրջ ենք ծառայում միջազգային արտադրողների և հայկական առողջապահական շուկայի միջև՝ ապահովելով ամբողջ ցիկլը՝ գնումներից և կարգավորող համապատասխանությունից մինչև առաքում և վաճառքից հետո սպասարկում:",
+    en: "Founded by the Mosoian family in 2025, MOSMED is a Yerevan-based global medical technology integrator specializing in medical robotics.",
+    ru: "Основанная семьёй Мосоян в 2025 году, MOSMED — ереванская компания-интегратор глобальных медицинских технологий, специализирующаяся на медицинской робототехнике.",
+    am: "Հիմնված Մոսոյան ընտանիքի կողմից 2025 թվականին՝ MOSMED-ը Երևանում գրանցված համաշխարհային բժշկական տեխնոլոգիաների ինտեգրատոր է, որը մասնագիտանում է բժշկական ռոբոտաշինության ոլորտում:",
   },
   about_p2: {
-    en: "Our partnerships are built on rigorous due diligence and long-term commitment. We work exclusively with manufacturers whose products meet the highest international standards, and we represent their equipment with the same professionalism and care that those standards demand. For a supplier entering the Armenian market, MOSMED is not simply a reseller — we are a strategic partner with deep local knowledge, established institutional relationships, and a founder whose medical expertise ensures every technology we bring in is clinically relevant and commercially viable.",
-    ru: "Наше партнёрство строится на строгой проверке и долгосрочных обязательствах. Мы работаем исключительно с производителями, чья продукция соответствует высочайшим международным стандартам, и представляем их оборудование с таким же профессионализмом и вниманием, которые эти стандарты требуют. Для поставщика, выходящего на армянский рынок, MOSMED — не просто реселлер: мы стратегический партнёр с глубоким знанием местной специфики, устоявшимися институциональными связями и основателем, чей медицинский опыт гарантирует клиническую актуальность и коммерческую жизнеспособность каждой привлекаемой технологии.",
-    am: "Մեր գործընկերությունները կառուցված են մանրակրկիտ ստուգման և երկարաժամկետ պարտավորությունների հիման վրա: Մենք աշխատում ենք բացառապես այն արտադրողների հետ, որոնց արտադրանքը համապատասխանում է բարձրագույն միջազգային չափանիշներին: Հայկական շուկա մտնող մատակարարի համար MOSMED-ը պարզապես վերավաճառող չէ. մենք ռազմավարական գործընկեր ենք՝ խոր տեղական գիտելիքներով, հաստատված հաստատական կապերով:",
+    en: "In a rapidly growing healthcare sector, we recognized that simply delivering equipment is not enough. Our partnerships are built on rigorous due diligence, long-term commitment, and comprehensive clinical support.",
+    ru: "В условиях стремительно развивающегося сектора здравоохранения мы осознали, что просто поставлять оборудование недостаточно. Наши партнёрства строятся на строгой проверке, долгосрочных обязательствах и всесторонней клинической поддержке.",
+    am: "Արագ զարգացող առողջապահական ոլորտում մենք հասկացանք, որ պարզապես սարքավորումներ մատակարարելը բավարար չէ: Մեր գործընկերությունները կառուցված են մանրակրկիտ ստուգման, երկարաժամկետ պարտավորությունների և համապարփակ կլինիկական աջակցության հիման վրա:",
   },
   about_p3: {
-    en: "Armenia's healthcare sector is growing steadily, driven by government investment in hospital modernisation and a medical community that is increasingly aware of what world-class technology can deliver. MOSMED is positioned at the centre of that growth — the reliable, professional conduit that gives global innovators confident access to this market.",
-    ru: "Сектор здравоохранения Армении стабильно растёт благодаря государственным инвестициям в модернизацию больниц и медицинскому сообществу, всё более осознающему возможности передовых технологий. MOSMED занимает центральное место в этом росте — надёжный, профессиональный проводник, открывающий глобальным инноваторам уверенный доступ к этому рынку.",
-    am: "Հայաստանի առողջապահական ոլորտը կայուն աճ է ապրում՝ պայմանավորված կառավարության ներդրումներով հիվանդանոցների արդիականացման ոլորտում: MOSMED-ը գտնվում է այդ աճի կենտրոնում՝ հուսալի, մասնագիտական կամուրջ, որն ապահովում է համաշխարհային նորարարների վստահ մուտքը այս շուկա:",
+    en: "Led by world-class robotic surgeons and industry experts, we bridge the gap between global MedTech innovators and local healthcare institutions. We ensure that every piece of technology we introduce is backed by robust infrastructure, international training programs, and ongoing clinical proctoring.",
+    ru: "Под руководством хирургов-роботологов мирового уровня и отраслевых экспертов мы устраняем разрыв между глобальными MedTech-инноваторами и местными медицинскими учреждениями, обеспечивая надёжную инфраструктуру, международные программы обучения и постоянный клинический прокторинг.",
+    am: "Համաշխարհային մակարդակի ռոբոտ-վիրաբույժների և ոլորտի փորձագետների ղեկավարությամբ մենք կամուրջ ենք ծառայում գլոբալ MedTech նորարարների և տեղական բժշկական հաստատությունների միջև՝ ապահովելով ամուր ենթակառուցվածք, միջազգային ուսուցման ծրագրեր և շարունակական կլինիկական պրոկտորինգ:",
   },
 
-  // ── Founder ──────────────────────────────────────────────────────────────────
-  founder_heading: {
-    en: "Our Founder",
-    ru: "Наш основатель",
-    am: "Մեր հիմնադիրը",
+  // ── Expertise ────────────────────────────────────────────────────────────────
+  expertise_label: {
+    en: "Our Expertise",
+    ru: "Наши направления",
+    am: "Մեր մասնագիտությունը",
   },
-  founder_name: {
-    en: "Dr. Mikhail (Mkrtich) Mosoyan",
-    ru: "Др. Михаил (Мкртич) Мосоян",
-    am: "Դր. Միխայիլ (Մկրտիչ) Մոսոյան",
+  expertise_heading: {
+    en: "What We Do",
+    ru: "Что мы делаем",
+    am: "Ինչ ենք անում",
   },
-  founder_title: {
-    en: "Doctor of Medical Sciences · Head of the Center for Robotic Surgery, Almazov National Medical Research Center · Professor of Urology, Pavlov First Saint Petersburg State Medical University · Official da Vinci Expert in Russia",
-    ru: "Доктор медицинских наук · Руководитель Центра роботической хирургии Национального медицинского исследовательского центра им. Алмазова · Профессор урологии Первого Санкт-Петербургского государственного медицинского университета им. Павлова · Официальный эксперт da Vinci в России",
-    am: "Բժշկական գիտությունների դոկտոր · Ալմազովի Ազգային բժշկական հետազոտական կենտրոնի ռոբոտային վիրաբուժության կենտրոնի ղեկավար · Պավլովի անվան Սանկտ Պետերբուրգի բժշկական համալսարանի ուռոլոգիայի պրոֆեսոր · Ռուսաստանում da Vinci-ի պաշտոնական փորձագետ",
+  expertise_card1_heading: {
+    en: "Robotic Surgery Integration",
+    ru: "Интеграция роботической хирургии",
+    am: "Ռոբոտային վիրաբուժության ինտեգրում",
   },
-  founder_p1: {
-    en: "Dr. Mikhail (Mkrtich) Mosoyan is a distinguished Russian urologist, practising robotic surgeon, and Doctor of Medical Sciences. He serves as Head of the Center for Robotic Surgery and Head of the Department of Urology at the Almazov National Medical Research Center, and as Professor of Urology at Pavlov First Saint Petersburg State Medical University. Recognised as the official da Vinci expert in Russia, he is widely regarded as one of the pioneers and founders of the Russian school of robotic surgery.",
-    ru: "Михаил (Мкртич) Мосоян — выдающийся российский уролог, практикующий роботический хирург и доктор медицинских наук. Он возглавляет Центр роботической хирургии и кафедру урологии Национального медицинского исследовательского центра им. Алмазова, а также является профессором урологии в Первом Санкт-Петербургском государственном медицинском университете им. Павлова. Являясь официальным экспертом da Vinci в России, он широко признан одним из пионеров и основоположников российской школы роботической хирургии.",
-    am: "Դր. Միխայիլ (Մկրտիչ) Մոսոյանը աչքաբերող ռուս ուռոլոգ է, գործող ռոբոտային վիրաբույժ և բժշկական գիտությունների դոկտոր: Նա ղեկավարում է Ռոբոտային վիրաբուժության կենտրոնը և Ուռոլոգիայի բաժանմունքը Ալմազովի Ազգային բժշկական հետազոտական կենտրոնում, ինչպես նաև ծառայում է որպես ուռոլոգիայի պրոֆեսոր Պավլովի անվան Սանկտ Պետերբուրգի բժշկական համալսարանում: Ռուսաստանում da Vinci-ի պաշտոնական փորձագետ ճանաչված՝ նա լայնորեն դիտվում է որպես ռուսական ռոբոտային վիրաբուժության դպրոցի առաջամարտիկներից մեկը:",
+  expertise_card1_body: {
+    en: "Trusted partners in deploying state-of-the-art multi-port robotic systems into top-tier national and private hospitals. We handle everything from regulatory compliance to logistics and installation.",
+    ru: "Надёжные партнёры по внедрению современных многопортовых роботизированных систем в ведущие государственные и частные больницы. Мы берём на себя всё — от соответствия нормативным требованиям до логистики и монтажа.",
+    am: "Հուսալի գործընկերներ ժամանակակից բազմաբևեռ ռոբոտային համակարգերի ներդրման գործում առաջատար պետական և մասնավոր հիվանդանոցներում: Մենք կատարում ենք ամեն ինչ՝ կարգավորող պահանջների պահպանումից մինչև լոգիստիկա և տեղադրում:",
   },
-  founder_p2: {
-    en: "Drawing on extensive clinical experience and advanced training in Europe, Dr. Mosoyan has been performing the most complex robot-assisted operations since 2009. He has carried out more than 1,500 robotic urological procedures, achieving results on par with the world's leading clinics. His commitment to advancing medical technology and his active membership in the European and American Associations of Urology make him an exceptionally authoritative partner within the international medical community.",
-    ru: "Опираясь на обширный клинический опыт и углублённую подготовку в Европе, д-р Мосоян выполняет наиболее сложные роботические операции с 2009 года. Он провёл более 1 500 роботических урологических вмешательств, достигая результатов на уровне ведущих мировых клиник. Его приверженность развитию медицинских технологий и активное членство в Европейской и Американской ассоциациях урологии делают его исключительно авторитетным партнёром в международном медицинском сообществе.",
-    am: "Ծավալուն կլինիկական փորձի և Եվրոպայում ունեցած առաջադեմ վերապատրաստման հիման վրա՝ Դր. Մոսոյանը 2009 թվականից կատարում է ամենաբարդ ռոբոտային վիրահատությունները: Նա կատարել է ավելի քան 1500 ռոբոտային ուռոլոգիական միջամտություն՝ հասնելով աշխարհի առաջատար կլինիկաների մակարդակի արդյունքների: Բժշկական տեխնոլոգիաների զարգացման նկատմամբ նրա նվիրվածությունը և Ուռոլոգիայի եվրոպական ու ամերիկյան ասոցիացիաների ակտիվ անդամությունը նրան դարձնում են բացառիկ հեղինակավոր գործընկեր միջազգային բժշկական հանրությունում:",
+  expertise_card2_heading: {
+    en: "OR Solutions",
+    ru: "Оснащение операционных",
+    am: "Վիրահատարանի լուծումներ",
   },
-  founder_quote: {
-    en: "\"The painting on my operating-room wall was a daily reminder that excellence is a direction, not a destination. That conviction is the foundation of everything MOSMED does.\"",
-    ru: "«Картина на стене моей операционной ежедневно напоминала мне, что совершенство — это направление, а не пункт назначения. Это убеждение лежит в основе всего, что делает MOSMED».",
-    am: "«Իմ վիրահատարանի պատին կախված նկարը ամեն օր հիշեցնում էր ինձ, որ կատարելությունը ուղղություն է, ոչ թե նպատակ: Այդ համոզմունքը MOSMED-ի բոլոր գործողությունների հիմքն է»:",
+  expertise_card2_body: {
+    en: "We equip next-generation operating rooms with comprehensive support technologies, including advanced electrosurgical units, specialized intraoperative ultrasound, and high-capacity medical waste management systems.",
+    ru: "Мы оснащаем операционные нового поколения комплексными вспомогательными технологиями: передовыми электрохирургическими аппаратами, специализированным интраоперационным УЗИ и высокопроизводительными системами утилизации медицинских отходов.",
+    am: "Մենք հաջորդ սերնդի վիրահատարաններ ենք հագեցնում համապարփակ աջակցող տեխնոլոգիաներով, ներառյալ առաջատար էլեկտրավիրաբուժական սարքերը, մասնագիտացված ինտրաօպերատիվ ուլտրաձայնը և բժշկական թափոնների կառավարման բարձր հզորության համակարգերը:",
+  },
+  expertise_card3_heading: {
+    en: "Clinical Education & Proctoring",
+    ru: "Клиническое обучение и прокторинг",
+    am: "Կլինիկական կրթություն և պրոկտորինգ",
+  },
+  expertise_card3_body: {
+    en: "Technology is only as good as the hands that use it. We facilitate international training programs for local surgeons at global centers of excellence and provide in-house clinical proctoring and telesurgery support led by globally recognized experts.",
+    ru: "Технологии ценны настолько, насколько умелы руки, которые ими управляют. Мы организуем международные программы обучения для местных хирургов в глобальных центрах передового опыта и обеспечиваем внутренний клинический прокторинг и поддержку телехирургии под руководством всемирно признанных экспертов.",
+    am: "Տեխնոլոգիաները այնքան արդյունավետ են, որքան դրանք օգտագործողների ձեռքերը: Մենք կազմակերպում ենք տեղական վիրաբույժների համար միջազգային ուսուցման ծրագրեր գլոբալ գերազանցության կենտրոններում և ապահովում ենք ներքին կլինիկական պրոկտորինգ ու տելևիրաբուժության աջակցություն՝ գլոբալ ճանաչված փորձագետների ղեկավարությամբ:",
   },
 
-  // ── Why MOSMED ───────────────────────────────────────────────────────────────
-  why_heading: {
-    en: "Why Partner with MOSMED",
-    ru: "Почему выбирают MOSMED",
-    am: "Ինչու ընտրել MOSMED-ին",
+  // ── Media ────────────────────────────────────────────────────────────────────
+  media_label: {
+    en: "Media",
+    ru: "Медиа",
+    am: "Մեդիա",
   },
-  why_card1_heading: {
-    en: "Direct Manufacturer Partnerships",
-    ru: "Прямые партнёрства с производителями",
-    am: "Ուղղակի գործընկերություն արտադրողների հետ",
+  media_heading: {
+    en: "MOSMED in the Media",
+    ru: "MOSMED в медиа",
+    am: "MOSMED-ը մեդիայում",
   },
-  why_card1_body: {
-    en: "We negotiate directly with global manufacturers, ensuring competitive terms, authentic products, and streamlined logistics.",
-    ru: "Мы ведём переговоры напрямую с мировыми производителями, обеспечивая конкурентные условия, подлинную продукцию и оптимизированную логистику.",
-    am: "Մենք բանակցում ենք ուղղակիորեն համաշխարհային արտադրողների հետ՝ ապահովելով մրցակցային պայմաններ, բնօրինակ ապրանքներ և օպտիմացված լոգիստիկա:",
+  press_heading: {
+    en: "News & Press",
+    ru: "Новости и пресса",
+    am: "Նորություններ և մամուլ",
   },
-  why_card2_heading: {
-    en: "Established Hospital Network",
-    ru: "Развитая сеть медицинских учреждений",
-    am: "Հաստատված հիվանդանոցային ցանց",
+  press_article1: {
+    en: "MOSMED coverage in Aravot",
+    ru: "Публикация о MOSMED в Aravot",
+    am: "MOSMED-ի մասին Aravot-ում",
   },
-  why_card2_body: {
-    en: "Trusted relationships with leading hospitals and clinics across Armenia — your products reach the right decision-makers immediately.",
-    ru: "Проверенные отношения с ведущими больницами и клиниками по всей Армении — ваши продукты сразу попадают к нужным лицам, принимающим решения.",
-    am: "Հաստատված կապեր Հայաստանի առաջատար հիվանդանոցների և կլինիկաների հետ. ձեր արտադրանքն անմիջապես հասնում է ճիշտ որոշումներ կայացնողներին:",
+  press_article2: {
+    en: "Robotic surgery operations at Astghik Medical Center",
+    ru: "Роботические операции в МЦ «Астхик»",
+    am: "Ռոբոտային վիրահատությունները Астхик ԲԿ-ում",
   },
-  why_card3_heading: {
-    en: "Advanced & Robotic Technology Focus",
-    ru: "Акцент на передовые и роботизированные технологии",
-    am: "Կենտրոնացում առաջատար և ռոբոտային տեխնոլոգիաների վրա",
+  press_article3: {
+    en: "MOSMED on Facebook",
+    ru: "MOSMED в Facebook",
+    am: "MOSMED-ը Facebook-ում",
   },
-  why_card3_body: {
-    en: "We specialise exclusively in high-value, innovative medical technology — not commodity equipment. Your brand is positioned at the top of the market.",
-    ru: "Мы специализируемся исключительно на высокотехнологичном инновационном медицинском оборудовании, а не на массовом. Ваш бренд позиционируется в топ-сегменте рынка.",
-    am: "Մենք մասնագիտանում ենք բացառապես բարձրարժեք, նորարարական բժշկական տեխնոլոգիաներում: Ձեր ապրանքանիշը տեղավորվում է շուկայի բարձր հատվածում:",
-  },
-  why_card4_heading: {
-    en: "Professional & Transparent",
-    ru: "Профессионально и прозрачно",
-    am: "Մասնագիտական և թափանցիկ",
-  },
-  why_card4_body: {
-    en: "Clear contracts, reliable communication, and full transparency at every stage. We operate to international business standards.",
-    ru: "Чёткие контракты, надёжная коммуникация и полная прозрачность на каждом этапе. Мы работаем по международным стандартам бизнеса.",
-    am: "Հստակ պայմանագրեր, հուսալի հաղորդակցություն և ամբողջական թափանցիկություն յուրաքանչյուր փուլում: Մենք գործում ենք միջազգային բիզնես չափանիշներով:",
+  press_article4: {
+    en: "Featured on LinkedIn",
+    ru: "Публикация в LinkedIn",
+    am: "LinkedIn-ում",
   },
 
   // ── Gallery ──────────────────────────────────────────────────────────────────
+  gallery_label: {
+    en: "In the Field",
+    ru: "В работе",
+    am: "Աշխատանքում",
+  },
   gallery_heading: {
     en: "In the Field",
-    ru: "В действии",
+    ru: "В работе",
     am: "Աշխատանքում",
+  },
+  gallery_cap1: {
+    en: "MOSMED team at the surgical robot installation in Astghik Medical Center",
+    ru: "Команда MOSMED при установке хирургического робота в МЦ «Астхик»",
+    am: "MOSMED-ի թիմը Астхик ԲԿ-ում վիրաբուժական ռոբոտի տեղադրման ժամանակ",
+  },
+  gallery_cap2: {
+    en: "Prof. Mkrtich Mosoian performing the first robot-assisted prostatectomy in Armenia",
+    ru: "Проф. Мкртич Мосоян выполняет первую роботическую простатэктомию в Армении",
+    am: "Պրոֆ. Մկրտիչ Մոսոյանը կատարում է Հայաստանում առաջին ռոբոտային պրոստատէկտոմիան",
+  },
+  gallery_cap3: {
+    en: "MOSMED clinical specialists during the surgery",
+    ru: "Клинические специалисты MOSMED во время операции",
+    am: "MOSMED-ի կլինիկական մասնագետները վիրահատության ժամանակ",
+  },
+  gallery_cap4: {
+    en: "Armenian surgeons attending advanced robotic training in international centers",
+    ru: "Армянские хирурги на курсах углублённой роботической подготовки в международных центрах",
+    am: "Հայ վիրաբույժները միջազգային կենտրոններում ռոբոտային վերապատրաստման դասընթացներին",
   },
 
   // ── Contact ──────────────────────────────────────────────────────────────────
@@ -178,9 +199,9 @@ const translations = {
     am: "Հեռախոս",
   },
   contact_phone: {
-    en: "+374 [FILL IN PHONE]",
-    ru: "+374 [УКАЖИТЕ ТЕЛЕФОН]",
-    am: "+374 [ԼՐԱՑՐԵՔ ՀԵՌԱԽՈՍԸ]",
+    en: "+374 91 250 303",
+    ru: "+374 91 250 303",
+    am: "+374 91 250 303",
   },
   contact_email_label: {
     en: "Email",
@@ -188,14 +209,9 @@ const translations = {
     am: "Էլ. փոստ",
   },
   contact_email: {
-    en: "[FILL IN EMAIL]",
-    ru: "[УКАЖИТЕ ЭЛЕКТРОННУЮ ПОЧТУ]",
-    am: "[ԼՐԱՑՐԵՔ ԷԼ. ՓՈՍՏԸ]",
-  },
-  contact_intro: {
-    en: "We welcome enquiries from international medical technology manufacturers and suppliers. Please reach out — we respond promptly.",
-    ru: "Мы приветствуем запросы от международных производителей и поставщиков медицинских технологий. Пожалуйста, свяжитесь с нами — мы отвечаем оперативно.",
-    am: "Մենք ողջունում ենք հարցումները միջազգային բժշկական տեխնոլոգիաների արտադրողներից և մատակարարներից: Կապվեք մեզ հետ. մենք արագ ենք արձագանքում:",
+    en: "karen.mosmed@gmail.com",
+    ru: "karen.mosmed@gmail.com",
+    am: "karen.mosmed@gmail.com",
   },
 
   // ── Footer ───────────────────────────────────────────────────────────────────
@@ -210,16 +226,11 @@ const translations = {
     am: "© {year} MOSMED. Բոլոր իրավունքները պաշտպանված են:",
   },
 
-  // ── Accessibility / misc ─────────────────────────────────────────────────────
+  // ── Accessibility ─────────────────────────────────────────────────────────────
   logo_alt: {
     en: "MOSMED logo",
     ru: "Логотип MOSMED",
     am: "MOSMED-ի լոգո",
-  },
-  founder_photo_alt: {
-    en: "Portrait of the MOSMED founder",
-    ru: "Портрет основателя MOSMED",
-    am: "MOSMED-ի հիմնադրի դիմանկարը",
   },
   map_title: {
     en: "MOSMED office location",

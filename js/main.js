@@ -85,6 +85,12 @@
       }
     });
 
+    // Show press links only in RU and AM
+    const pressSection = document.getElementById("press-section");
+    if (pressSection) {
+      pressSection.style.display = lang === "en" ? "none" : "block";
+    }
+
     // Active state on switcher buttons
     document.querySelectorAll(".lang-btn").forEach((btn) => {
       btn.classList.toggle("lang-btn--active", btn.dataset.lang === lang);
