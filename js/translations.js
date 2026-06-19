@@ -219,19 +219,19 @@ const translations = {
     am: "Աշխատանքում",
   },
   gallery_cap1: {
-    en: "MosMed team at the surgical robot installation in Astghik Medical Center",
-    ru: "Команда MosMed во время установки хирургического робота в МЦ «Астхик»",
-    am: "MosMed-ի թիմը «Աստղիկ» ԲԿ-ում վիրաբուժական ռոբոտի տեղադրման ժամանակ",
+    en: "MOSMED team at the surgical robot installation in Astghik Medical Center",
+    ru: "Команда MOSMED во время установки хирургического робота в МЦ «Астхик»",
+    am: "MOSMED-ի թիմը «Աստղիկ» ԲԿ-ում վիրաբուժական ռոբոտի տեղադրման ժամանակ",
   },
   gallery_cap2: {
-    en: "Prof. Mkrtich Mosoian performing the first robot-assisted prostatectomy in Armenia",
+    en: "Professor Mkrtich Mosoian performing the first robot-assisted prostatectomy in Armenia",
     ru: "Проф. Мкртич Мосоян выполняет первую роботизированную простатэктомию в Армении",
     am: "Պրոֆ. Մկրտիչ Մոսոյանը կատարում է Հայաստանում ռոբոտի օժանդակությամբ առաջին պրոստատէկտոմիան",
   },
   gallery_cap3: {
-    en: "MosMed clinical specialists during the surgery",
-    ru: "Клинические специалисты MosMed во время операции",
-    am: "MosMed-ի կլինիկական մասնագետները վիրահատության ժամանակ",
+    en: "MOSMED clinical specialists during the surgery",
+    ru: "Клинические специалисты MOSMED во время операции",
+    am: "MOSMED-ի կլինիկական մասնագետները վիրահատության ժամանակ",
   },
   gallery_cap4: {
     en: "Armenian surgeons attending advanced robotic training in international centers",
@@ -239,7 +239,7 @@ const translations = {
     am: "Հայ վիրաբույժները մասնակցում են ռոբոտային վիրաբուժության առաջատար վերապատրաստմանը միջազգային կենտրոններում",
   },
   gallery_cap5: {
-    en: "Prof. Mkrtich Mosoian leading a robotic surgery proctoring session in Yerevan",
+    en: "Professor Mkrtich Mosoian leading a robotic surgery proctoring session in Yerevan",
     ru: "Проф. Мкртич Мосоян проводит сессию прокторинга по роботической хирургии в Ереване",
     am: "Պրոֆ. Մկրտիչ Մոսոյանը ղեկավարում է ռոբոտային վիրաբուժության պրոկտորինգի նիստը Երևանում",
   },
@@ -283,9 +283,9 @@ const translations = {
 
   // ── Media ────────────────────────────────────────────────────────────────────
   media_heading: {
-    en: "MosMed in the Media",
-    ru: "MosMed в СМИ",
-    am: "MosMed-ը մամուլում",
+    en: "MOSMED in the Media",
+    ru: "MOSMED в СМИ",
+    am: "MOSMED-ը մամուլում",
   },
 
   // ── News & Press ─────────────────────────────────────────────────────────────
