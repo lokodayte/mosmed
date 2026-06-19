@@ -170,8 +170,8 @@ address { font-style: normal; }
 .about-body .body-text:first-child { font-family: var(--font-serif); font-size: clamp(1.15rem, 2vw, 1.35rem); font-weight: 500; color: var(--color-slate); line-height: 1.6; margin-bottom: 1.5rem; }
 :lang(hy) .about-body .body-text:first-child, :lang(ru) .about-body .body-text:first-child { font-family: 'Noto Serif', Georgia, serif; }
 .about-body .body-text { font-size: clamp(0.97rem, 1.4vw, 1.05rem); color: var(--color-slate-mid); line-height: 1.9; }
-.about-callout { margin-top: 1.75rem; padding: 1.25rem 1.5rem; border-left: 3px solid var(--color-amber); background: var(--color-amber-pale); border-radius: 0 var(--radius-sm) var(--radius-sm) 0; font-family: var(--font-serif); font-size: clamp(1rem, 1.6vw, 1.15rem); font-style: italic; color: var(--color-slate); line-height: 1.65; max-width: 68ch; }
-:lang(hy) .about-callout, :lang(ru) .about-callout { font-family: 'Noto Serif', Georgia, serif; }
+.about-callout { margin-top: 1.75rem; padding: 1.4rem 1.6rem; border-left: 4px solid var(--color-amber); background: var(--color-amber-pale); border-radius: 0 var(--radius-sm) var(--radius-sm) 0; font-family: var(--font-serif); font-size: clamp(1.12rem, 1.8vw, 1.32rem); font-weight: 600; font-style: italic; color: var(--color-slate); line-height: 1.6; max-width: 68ch; }
+:lang(hy) .about-callout, :lang(ru) .about-callout { font-family: 'Noto Serif', Georgia, serif; font-size: clamp(1rem, 1.6vw, 1.15rem); font-weight: 400; }
 
 /* ── Founder ── */
 .founder-grid { display: grid; grid-template-columns: 1fr; gap: var(--space-lg); margin-top: var(--space-md); }
