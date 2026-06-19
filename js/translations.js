@@ -33,14 +33,14 @@ const translations = {
     am: "Այսպես են գնում դեպի աստղերը",
   },
   hero_tagline: {
-    en: "Robotic technologies in medicine",
-    ru: "Роботизированные технологии в медицине",
-    am: "Ռոբոտային տեխնոլոգիաները բժշկության մեջ",
+    en: "Pioneering Robotic Surgery and Advanced Medical Technologies in the South Caucasus",
+    ru: "Развитие роботической хирургии и передовых медицинских технологий на Южном Кавказе",
+    am: "Ռոբոտային վիրաբուժության և առաջատար բժշկական տեխնոլոգիաների ռահվիրա Հարավային Կովկասում",
   },
   hero_body: {
-    en: "MOSMED connects world-class medical and robotic technology manufacturers with Armenian healthcare institutions — bringing the most advanced equipment to those who need it most.",
-    ru: "MOSMED соединяет ведущих мировых производителей медицинского и роботизированного оборудования с армянскими медицинскими учреждениями — доставляя самые передовые технологии тем, кто в них нуждается.",
-    am: "MOSMED-ը կապում է համաշխարհային առաջատար բժշկական և ռոբոտային տեխնոլոգիաների արտադրողներին հայկական բժշկական հաստատությունների հետ՝ ապահովելով ամենաառաջատար սարքավորումները:",
+    en: "MOSMED is the premier strategic partner and distributor for world-class robotic technologies in medicine. We deliver end-to-end clinical integration with world-class surgical training and proctoring.",
+    ru: "MOSMED — ведущий стратегический партнёр и дистрибьютор передовых роботизированных технологий в медицине. Мы обеспечиваем полный цикл клинической интеграции с хирургическим обучением и прокторингом мирового уровня.",
+    am: "MOSMED-ը բժշկության մեջ համաշխարհային մակարդակի ռոբոտային տեխնոլոգիաների առաջատար ռազմավարական գործընկերն ու բաշխողն է: Մենք ապահովում ենք կլինիկական ինտեգրման ամբողջական ցիկլ՝ վիրաբուժական ուսուցմամբ և պրոկտորինգով:",
   },
   hero_cta: {
     en: "Learn more",
@@ -68,6 +68,43 @@ const translations = {
     en: "Armenia's healthcare sector is growing steadily, driven by government investment in hospital modernisation and a medical community that is increasingly aware of what world-class technology can deliver. MOSMED is positioned at the centre of that growth — the reliable, professional conduit that gives global innovators confident access to this market.",
     ru: "Сектор здравоохранения Армении стабильно растёт благодаря государственным инвестициям в модернизацию больниц и медицинскому сообществу, всё более осознающему возможности передовых технологий. MOSMED занимает центральное место в этом росте — надёжный, профессиональный проводник, открывающий глобальным инноваторам уверенный доступ к этому рынку.",
     am: "Հայաստանի առողջապահական ոլորտը կայուն աճ է ապրում՝ պայմանավորված կառավարության ներդրումներով հիվանդանոցների արդիականացման ոլորտում: MOSMED-ը գտնվում է այդ աճի կենտրոնում՝ հուսալի, մասնագիտական կամուրջ, որն ապահովում է համաշխարհային նորարարների վստահ մուտքը այս շուկա:",
+  },
+
+  // ── Expertise ────────────────────────────────────────────────────────────────
+  expertise_heading: {
+    en: "Our Expertise",
+    ru: "Наши направления",
+    am: "Մեր մասնագիտությունը",
+  },
+  expertise_card1_heading: {
+    en: "Robotic Surgery Integration",
+    ru: "Интеграция роботической хирургии",
+    am: "Ռոբոտային վիրաբուժության ինտեգրում",
+  },
+  expertise_card1_body: {
+    en: "Trusted partners in deploying state-of-the-art multi-port robotic systems into top-tier national and private hospitals. We handle everything from regulatory compliance to logistics and installation.",
+    ru: "Надёжные партнёры по внедрению современных многопортовых роботизированных систем в ведущие государственные и частные больницы. Мы берём на себя всё — от соответствия нормативным требованиям до логистики и монтажа.",
+    am: "Հուսալի գործընկերներ ժամանակակից բազմաբևեռ ռոբոտային համակարգերի ներդրման գործում առաջատար պետական և մասնավոր հիվանդանոցներում:",
+  },
+  expertise_card2_heading: {
+    en: "OR Solutions",
+    ru: "Оснащение операционных",
+    am: "Վիրահատարանի լուծումներ",
+  },
+  expertise_card2_body: {
+    en: "We equip next-generation operating rooms with comprehensive support technologies, including advanced electrosurgical units, specialized intraoperative ultrasound, and high-capacity medical waste management systems.",
+    ru: "Мы оснащаем операционные нового поколения комплексными вспомогательными технологиями: передовыми электрохирургическими аппаратами, специализированным интраоперационным УЗИ и системами утилизации медицинских отходов.",
+    am: "Մենք հաջորդ սերնդի վիրահատարաններ ենք հագեցնում համապարփակ աջակցող տեխնոլոգիաներով, ներառյալ էլեկտրավիրաբուժական սարքեր, ինտրաօպերատիվ ուլտրաձայն և բժշկական թափոնների կառավարման համակարգեր:",
+  },
+  expertise_card3_heading: {
+    en: "Clinical Education & Proctoring",
+    ru: "Клиническое обучение и прокторинг",
+    am: "Կլինիկական կրթություն և պրոկտորինգ",
+  },
+  expertise_card3_body: {
+    en: "Technology is only as good as the hands that use it. We facilitate international training programs for local surgeons at global centers of excellence and provide in-house clinical proctoring and telesurgery support led by globally recognized experts.",
+    ru: "Технологии ценны настолько, насколько умелы руки, которые ими управляют. Мы организуем международные программы обучения для местных хирургов и обеспечиваем клинический прокторинг и поддержку телехирургии под руководством всемирно признанных экспертов.",
+    am: "Տեխնոլոգիաները այնքան արդյունավետ են, որքան դրանք օգտագործողների ձեռքերը: Մենք կազմակերպում ենք տեղական վիրաբույժների միջազգային ուսուցման ծրագրեր և ապահովում ենք կլինիկական պրոկտորինգ ու տելևիրաբուժության աջակցություն:",
   },
 
   // ── Founder ──────────────────────────────────────────────────────────────────
