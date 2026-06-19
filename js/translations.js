@@ -215,9 +215,9 @@ const translations = {
     am: "Հեռախոս",
   },
   contact_phone: {
-    en: "+374 [FILL IN PHONE]",
-    ru: "+374 [УКАЖИТЕ ТЕЛЕФОН]",
-    am: "+374 [ԼՐԱՑՐԵՔ ՀԵՌԱԽՈՍԸ]",
+    en: "+374 91 250 303",
+    ru: "+374 91 250 303",
+    am: "+374 91 250 303",
   },
   contact_email_label: {
     en: "Email",
@@ -225,9 +225,56 @@ const translations = {
     am: "Էլ. փոստ",
   },
   contact_email: {
-    en: "[FILL IN EMAIL]",
-    ru: "[УКАЖИТЕ ЭЛЕКТРОННУЮ ПОЧТУ]",
-    am: "[ԼՐԱՑՐԵՔ ԷԼ. ՓՈՍՏԸ]",
+    en: "karen.mosmed@gmail.com",
+    ru: "karen.mosmed@gmail.com",
+    am: "karen.mosmed@gmail.com",
+  },
+
+  // ── News & Press ─────────────────────────────────────────────────────────────
+  press_heading: {
+    en: "News & Press",
+    ru: "Новости и пресса",
+    am: "Նորություններ և մամուլ",
+  },
+  press_article1_title: {
+    en: "First Robot-Assisted Surgery Performed in Armenia",
+    ru: "В Армении проведена первая роботизированная операция",
+    am: "Հայաստանում կատարվեց ռոբոտով օժանդակ առաջին վիրահատությունը",
+  },
+  press_article1_source: {
+    en: "Aravot.am",
+    ru: "Aravot.am",
+    am: "Aravot.am",
+  },
+  press_article2_title: {
+    en: "Astkhik Medical Center Now Performs Surgeries with a Surgical Robot",
+    ru: "В МЦ «Астхик» уже проводят операции с применением хирургического робота",
+    am: "«Աստղիկ» ԲԿ-ն արդեն կատարում է վիրահատություններ վիրաբուժական ռոբոտի օգնությամբ",
+  },
+  press_article2_source: {
+    en: "Med.News.am",
+    ru: "Med.News.am",
+    am: "Med.News.am",
+  },
+  press_article3_title: {
+    en: "MOSMED on Facebook — Surgical Robot in Action",
+    ru: "MOSMED в Facebook — хирургический робот в действии",
+    am: "MOSMED Facebook-ում — վիրաբուժական ռոբոտը գործողության մեջ",
+  },
+  press_article3_source: {
+    en: "Facebook",
+    ru: "Facebook",
+    am: "Facebook",
+  },
+  press_article4_title: {
+    en: "MIF Grads Make a Strong Start in Finance & Healthcare",
+    ru: "Выпускники MIF успешно стартуют в финансах и здравоохранении",
+    am: "MIF շրջանավարտները հաջողությամբ մուտք են գործում ֆինանսների ոլորտ",
+  },
+  press_article4_source: {
+    en: "University of Chicago Booth",
+    ru: "University of Chicago Booth",
+    am: "University of Chicago Booth",
   },
   contact_intro: {
     en: "We welcome enquiries from international medical technology manufacturers and suppliers. Please reach out — we respond promptly.",
