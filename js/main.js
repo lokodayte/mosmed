@@ -69,6 +69,12 @@
       }
     });
 
+    // Show/hide elements based on language
+    document.querySelectorAll("[data-lang-show]").forEach((el) => {
+      const langs = el.getAttribute("data-lang-show").split(" ");
+      el.style.display = langs.includes(lang) ? "" : "none";
+    });
+
     // Update alt attributes
     document.querySelectorAll("[data-i18n-alt]").forEach((el) => {
       const key = el.getAttribute("data-i18n-alt");

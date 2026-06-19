@@ -230,6 +230,13 @@ const translations = {
     am: "karen.mosmed@gmail.com",
   },
 
+  // ── Media ────────────────────────────────────────────────────────────────────
+  media_heading: {
+    en: "MosMed in the Media",
+    ru: "MosMed в СМИ",
+    am: "MosMed-ը մամուլում",
+  },
+
   // ── News & Press ─────────────────────────────────────────────────────────────
   press_heading: {
     en: "News & Press",
