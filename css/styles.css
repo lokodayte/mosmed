@@ -71,6 +71,9 @@ address { font-style: normal; }
 
 /* ── Hero ── */
 .hero { position: relative; background: var(--color-cream); padding-block: clamp(5rem, 10vw, 8rem); overflow: hidden; isolation: isolate; }
+.hero-bg { position: absolute; inset: 0; z-index: 0; }
+.hero-bg-img { width: 100%; height: 100%; object-fit: cover; object-position: center; filter: blur(3px) brightness(0.55) saturate(0.6); transform: scale(1.05); }
+.hero-bg::after { content: ''; position: absolute; inset: 0; background: rgba(241, 235, 220, 0.55); }
 .hero::before { content: ''; position: absolute; top: -20%; right: -10%; width: min(700px, 90vw); height: min(700px, 90vw); border-radius: 50%; background: radial-gradient(circle, rgba(229,154,60,0.13) 0%, transparent 65%); pointer-events: none; }
 .hero::after { content: ''; position: absolute; bottom: 0; left: 0; width: 100%; height: 120px; background: linear-gradient(to bottom, transparent, var(--color-white)); pointer-events: none; }
 .hero-inner { position: relative; z-index: 1; display: grid; grid-template-columns: 1fr auto; align-items: center; gap: clamp(3rem, 6vw, 6rem); }
@@ -84,6 +87,13 @@ address { font-style: normal; }
 .hero-body { font-size: clamp(1rem, 1.6vw, 1.08rem); line-height: 1.8; color: var(--color-slate-mid); max-width: 54ch; margin-bottom: var(--space-lg); }
 .hero-logo-wrap { flex-shrink: 0; display: flex; align-items: center; justify-content: center; }
 .hero-logo-img { height: clamp(200px, 28vw, 360px); width: auto; opacity: 0.92; filter: drop-shadow(0 16px 40px rgba(60,74,90,0.12)); }
+
+/* ── Gallery ── */
+.gallery-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; margin-top: var(--space-md); }
+@media (min-width: 768px) { .gallery-grid { grid-template-columns: repeat(4, 1fr); gap: 1.25rem; } }
+.gallery-item { overflow: hidden; border-radius: var(--radius-md); aspect-ratio: 3/4; }
+.gallery-item img { width: 100%; height: 100%; object-fit: cover; object-position: center; transition: transform 500ms ease; display: block; }
+.gallery-item:hover img { transform: scale(1.05); }
 
 /* ── Button ── */
 .btn { display: inline-flex; align-items: center; font-family: var(--font-sans); font-size: 0.78rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; border: none; border-radius: var(--radius-sm); padding: 0.9rem 2.2rem; cursor: pointer; transition: background var(--ease), transform 150ms ease, box-shadow var(--ease); }
