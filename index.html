@@ -3,9 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="MOSMED — pioneering robotic surgery and advanced medical technologies in the South Caucasus." />
+  <meta name="description" content="MOSMED — trusted Armenian distributor of advanced and robotic medical technology." />
   <title>MOSMED — Robotic Technologies in Medicine</title>
 
+  <!-- Google Fonts: Cormorant Garamond (serif headings) + Inter (body) -->
+  <!-- Note: Cormorant Garamond has no Armenian/Cyrillic glyphs.
+       CSS font-stack falls back to Noto Serif for AM/RU heading text. -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
@@ -15,6 +18,7 @@
 
   <link rel="stylesheet" href="css/styles.css" />
 
+  <!-- Favicon -->
   <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
   <link rel="icon" type="image/png" sizes="192x192" href="assets/favicon-192.png" />
   <link rel="apple-touch-icon" href="assets/favicon-192.png" />
@@ -22,9 +26,13 @@
 
 <body>
 
+  <!-- ════════════════════════════════════════════════════════════════════════
+       HEADER / NAVBAR
+  ════════════════════════════════════════════════════════════════════════ -->
   <header id="site-header" role="banner">
     <nav class="nav container" aria-label="Main navigation">
 
+      <!-- Logo -->
       <a href="#hero" class="nav-logo" aria-label="MOSMED — home">
         <img
           class="logo-img"
@@ -32,9 +40,11 @@
           data-i18n-alt="logo_alt"
           alt="MOSMED logo"
         />
+        <!-- Shown only if logo.png fails to load -->
         <span class="logo-fallback" aria-hidden="true" style="display:none">MOSMED</span>
       </a>
 
+      <!-- Mobile hamburger -->
       <button
         id="nav-toggle"
         class="nav-toggle"
@@ -47,15 +57,14 @@
         <span class="hamburger-bar"></span>
       </button>
 
+      <!-- Nav links + language switcher -->
       <div id="nav-menu" class="nav-menu">
         <ul class="nav-links" role="list">
-          <li><a href="#about"    data-i18n="nav_about">About</a></li>
-          <li><a href="#expertise" data-i18n="nav_expertise">Expertise</a></li>
-          <li><a href="#media"    data-i18n="nav_media">Media</a></li>
-          <li><a href="#gallery"  data-i18n="nav_gallery">In the Field</a></li>
-          <li><a href="#contact"  data-i18n="nav_contact">Contact</a></li>
+          <li><a href="#about" data-i18n="nav_about">About</a></li>
+          <li><a href="#contact" data-i18n="nav_contact">Contact</a></li>
         </ul>
 
+        <!-- Language switcher -->
         <div class="lang-switcher" role="group" aria-label="Language selection">
           <button class="lang-btn" data-lang="am" aria-pressed="false">AM</button>
           <button class="lang-btn" data-lang="ru" aria-pressed="false">RU</button>
@@ -68,160 +77,95 @@
 
   <main>
 
-    <!-- HERO -->
+    <!-- ════════════════════════════════════════════════════════════════════════
+         HERO
+    ════════════════════════════════════════════════════════════════════════ -->
     <section id="hero" class="hero" aria-label="Hero">
       <div class="hero-bg" aria-hidden="true">
         <img src="assets/images/mosoffice.JPG" alt="" class="hero-bg-img" />
       </div>
       <div class="container hero-inner">
-        <p class="hero-eyebrow"><span class="hero-eyebrow-line"></span><span data-i18n="hero_slogan">Sic itur ad astra</span></p>
-        <h1 class="hero-slogan" data-i18n="hero_tagline">Pioneering Robotic Surgery and Advanced Medical Technologies in the South Caucasus</h1>
-        <p class="hero-body" data-i18n="hero_body">MOSMED is the premier strategic partner and distributor for world-class robotic technologies in medicine. We deliver end-to-end clinical integration with world-class surgical training and proctoring.</p>
+
+        <!-- Wordmark -->
+
+        <!-- Latin slogan -->
+        <h1 class="hero-slogan">
+          <span data-i18n="hero_slogan">Sic itur ad astra</span>
+        </h1>
+
+        <!-- Positioning statement -->
+        <p class="hero-body" data-i18n="hero_body">
+          MOSMED connects world-class medical and robotic technology manufacturers with Armenian healthcare institutions — bringing the most advanced equipment to those who need it most.
+        </p>
+
       </div>
     </section>
 
-    <!-- ABOUT -->
-    <section id="about" class="section section--white" aria-labelledby="about-heading">
+    <!-- ════════════════════════════════════════════════════════════════════════
+         ABOUT
+    ════════════════════════════════════════════════════════════════════════ -->
+    <section id="about" class="section section--cream" aria-labelledby="about-heading">
       <div class="container">
-        <div class="section-label section-label--amber fade-in" aria-hidden="true"><span class="section-label-line"></span>About</div>
-        <h2 id="about-heading" class="section-heading fade-in" data-i18n="about_heading">About MOSMED</h2>
+        <div class="section-label section-label--amber fade-in" aria-hidden="true">About</div>
+        <h2 id="about-heading" class="section-heading fade-in" data-i18n="about_heading">
+          About MOSMED
+        </h2>
         <div class="about-body">
-          <p class="body-text body-text--lead fade-in" data-i18n="about_p1">
-            Founded by the Mosoian family in 2025, MOSMED is a Yerevan-based global medical technology integrator specializing in medical robotics.
+          <p class="body-text fade-in" data-i18n="about_p1">
+            MOSMED is a Yerevan-based distribution company specialising in advanced and robotic medical technology.
           </p>
           <p class="body-text fade-in" data-i18n="about_p2">
-            In a rapidly growing healthcare sector, we recognized that simply delivering equipment is not enough. Our partnerships are built on rigorous due diligence, long-term commitment, and comprehensive clinical support.
+            Our partnerships are built on rigorous due diligence and long-term commitment.
           </p>
           <p class="body-text fade-in" data-i18n="about_p3">
-            Led by world-class robotic surgeons and industry experts, we bridge the gap between global MedTech innovators and local healthcare institutions. We ensure that every piece of technology we introduce is backed by robust infrastructure, international training programs, and ongoing clinical proctoring.
+            Armenia's healthcare sector is growing steadily.
           </p>
         </div>
       </div>
     </section>
 
-    <!-- OUR EXPERTISE -->
-    <section id="expertise" class="section section--cream" aria-labelledby="expertise-heading">
-      <div class="container">
-        <div class="section-label section-label--amber fade-in" aria-hidden="true"><span class="section-label-line"></span><span data-i18n="expertise_label">Our Expertise</span></div>
-        <h2 id="expertise-heading" class="section-heading fade-in" data-i18n="expertise_heading">What We Do</h2>
-        <div class="expertise-grid">
 
-          <article class="expertise-card fade-in">
-            <div class="expertise-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/>
-              </svg>
-            </div>
-            <h3 class="expertise-title" data-i18n="expertise_card1_heading">Robotic Surgery Integration</h3>
-            <p class="expertise-body" data-i18n="expertise_card1_body">Trusted partners in deploying state-of-the-art multi-port robotic systems into top-tier national and private hospitals. We handle everything from regulatory compliance to logistics and installation.</p>
-          </article>
 
-          <article class="expertise-card fade-in">
-            <div class="expertise-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                <rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/>
-              </svg>
-            </div>
-            <h3 class="expertise-title" data-i18n="expertise_card2_heading">OR Solutions</h3>
-            <p class="expertise-body" data-i18n="expertise_card2_body">We equip next-generation operating rooms with comprehensive support technologies, including advanced electrosurgical units, specialized intraoperative ultrasound, and high-capacity medical waste management systems.</p>
-          </article>
-
-          <article class="expertise-card fade-in">
-            <div class="expertise-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/>
-              </svg>
-            </div>
-            <h3 class="expertise-title" data-i18n="expertise_card3_heading">Clinical Education &amp; Proctoring</h3>
-            <p class="expertise-body" data-i18n="expertise_card3_body">Technology is only as good as the hands that use it. We facilitate international training programs for local surgeons at global centers of excellence and provide in-house clinical proctoring and telesurgery support led by globally recognized experts.</p>
-          </article>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- IN THE MEDIA -->
-    <section id="media" class="section section--white" aria-labelledby="media-heading">
-      <div class="container">
-        <div class="section-label section-label--amber fade-in" aria-hidden="true"><span class="section-label-line"></span><span data-i18n="media_label">Media</span></div>
-        <h2 id="media-heading" class="section-heading fade-in" data-i18n="media_heading">MOSMED in the Media</h2>
-
-        <!-- YouTube videos -->
-        <div class="media-videos fade-in">
-          <div class="video-wrap">
-            <iframe src="https://www.youtube.com/embed/V0QrR3rMJ3w" title="MOSMED video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
-          </div>
-          <div class="video-wrap">
-            <iframe src="https://www.youtube.com/embed/y4QfjLz0b0c" title="MOSMED video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
-          </div>
-          <div class="video-wrap">
-            <iframe src="https://www.youtube.com/embed/8q_7QoxsPYg" title="MOSMED video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
-          </div>
-        </div>
-
-        <!-- News & Press links — hidden in EN, shown in RU/AM -->
-        <div class="press-links fade-in" id="press-section">
-          <h3 class="press-heading" data-i18n="press_heading">News &amp; Press</h3>
-          <div class="press-grid">
-            <a href="https://www.aravot.am/2026/05/06/1554800/" target="_blank" rel="noopener" class="press-card">
-              <div class="press-source">Aravot.am</div>
-              <p class="press-title" data-i18n="press_article1">MOSMED coverage in Aravot</p>
-              <span class="press-arrow">→</span>
-            </a>
-            <a href="https://med.news.am/rus/news/40424/v-mc-astkhik-uzhe-provodyat-operacii-s-primeneniem-khirurgicheskogo-robota.html" target="_blank" rel="noopener" class="press-card">
-              <div class="press-source">Med.news.am</div>
-              <p class="press-title" data-i18n="press_article2">Robotic surgery operations at Astghik Medical Center</p>
-              <span class="press-arrow">→</span>
-            </a>
-            <a href="https://www.facebook.com/share/v/1CthzXPyRn/" target="_blank" rel="noopener" class="press-card">
-              <div class="press-source">Facebook</div>
-              <p class="press-title" data-i18n="press_article3">MOSMED on Facebook</p>
-              <span class="press-arrow">→</span>
-            </a>
-            <a href="https://www.linkedin.com/posts/universityofchicagoboothschoolofbusiness_mif-grads-make-a-strong-start-in-finance-activity-7472664345869492224-_aor" target="_blank" rel="noopener" class="press-card">
-              <div class="press-source">LinkedIn</div>
-              <p class="press-title" data-i18n="press_article4">Featured on LinkedIn</p>
-              <span class="press-arrow">→</span>
-            </a>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- IN THE FIELD / GALLERY -->
+    <!-- ════════════════════════════════════════════════════════════════════════
+         GALLERY
+    ════════════════════════════════════════════════════════════════════════ -->
     <section id="gallery" class="section section--cream" aria-labelledby="gallery-heading">
       <div class="container">
-        <div class="section-label section-label--amber fade-in" aria-hidden="true"><span class="section-label-line"></span><span data-i18n="gallery_label">In the Field</span></div>
+        <div class="section-label section-label--amber fade-in" aria-hidden="true">Our Work</div>
         <h2 id="gallery-heading" class="section-heading fade-in" data-i18n="gallery_heading">In the Field</h2>
         <div class="gallery-grid">
-          <figure class="gallery-item fade-in">
-            <img src="assets/images/mosteam.JPG" alt="" loading="lazy" />
-            <figcaption data-i18n="gallery_cap1">MOSMED team at the surgical robot installation in Astghik Medical Center</figcaption>
-          </figure>
-          <figure class="gallery-item fade-in">
-            <img src="assets/images/Mosboss.JPG" alt="" loading="lazy" />
-            <figcaption data-i18n="gallery_cap2">Prof. Mkrtich Mosoian performing the first robot-assisted prostatectomy in Armenia</figcaption>
-          </figure>
-          <figure class="gallery-item fade-in">
-            <img src="assets/images/mosbystander.JPG" alt="" loading="lazy" />
-            <figcaption data-i18n="gallery_cap3">MOSMED clinical specialists during the surgery</figcaption>
-          </figure>
-          <figure class="gallery-item fade-in">
-            <img src="assets/images/Moskar.JPG" alt="" loading="lazy" />
-            <figcaption data-i18n="gallery_cap4">Armenian surgeons attending advanced robotic training in international centers</figcaption>
-          </figure>
+          <div class="gallery-item fade-in">
+            <img src="assets/images/mosteam.JPG" alt="MOSMED team" loading="lazy" />
+          </div>
+          <div class="gallery-item fade-in">
+            <img src="assets/images/Mosboss.JPG" alt="MOSMED founder at work" loading="lazy" />
+          </div>
+          <div class="gallery-item fade-in">
+            <img src="assets/images/mosbystander.JPG" alt="MOSMED in the operating room" loading="lazy" />
+          </div>
+          <div class="gallery-item fade-in">
+            <img src="assets/images/Moskar.JPG" alt="MOSMED equipment" loading="lazy" />
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- CONTACT -->
+    <!-- ════════════════════════════════════════════════════════════════════════
+         CONTACT
+         <!-- CONTACT DETAILS: Fill in phone and email in js/translations.js
+              (keys: contact_phone, contact_email) -->
+    ════════════════════════════════════════════════════════════════════════ -->
     <section id="contact" class="section section--white" aria-labelledby="contact-heading">
       <div class="container">
-        <div class="section-label section-label--amber fade-in" aria-hidden="true"><span class="section-label-line"></span>Contact</div>
-        <h2 id="contact-heading" class="section-heading fade-in" data-i18n="contact_heading">Contact Us</h2>
+        <div class="section-label section-label--amber fade-in" aria-hidden="true">Contact</div>
+        <h2 id="contact-heading" class="section-heading fade-in" data-i18n="contact_heading">
+          Contact Us
+        </h2>
+
 
         <div class="contact-grid">
+
+          <!-- Details -->
           <div class="contact-details fade-in">
 
             <div class="contact-item">
@@ -233,43 +177,74 @@
 
             <div class="contact-item">
               <span class="contact-label" data-i18n="contact_phone_label">Telephone</span>
-              <a href="tel:+37491250303" class="contact-value contact-link" data-i18n="contact_phone">+374 91 250 303</a>
+              <!--
+                PHONE: Replace the href value and text content below,
+                or update contact_phone in js/translations.js.
+              -->
+              <a href="tel:+374XXXXXXXX" class="contact-value contact-link" data-i18n="contact_phone">
+                +374 [FILL IN PHONE]
+              </a>
             </div>
 
             <div class="contact-item">
               <span class="contact-label" data-i18n="contact_email_label">Email</span>
-              <a href="mailto:karen.mosmed@gmail.com" class="contact-value contact-link" data-i18n="contact_email">karen.mosmed@gmail.com</a>
+              <!--
+                EMAIL: Replace the href value and text content below,
+                or update contact_email in js/translations.js.
+              -->
+              <a href="mailto:info@mosmed.am" class="contact-value contact-link" data-i18n="contact_email">
+                [FILL IN EMAIL]
+              </a>
             </div>
 
           </div>
 
+          <!-- Map -->
           <div class="contact-map fade-in">
             <iframe
               data-i18n-title="map_title"
               title="MOSMED office location"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d775.8!2d44.5138!3d40.1852!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x406abd26b6f00001%3A0x0!2sNalbandyan+St+50%2C+Yerevan%2C+Armenia!5e0!3m2!1sen!2s!4v1"
-              width="100%" height="360" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+              width="100%"
+              height="360"
+              style="border:0;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
             ></iframe>
           </div>
+
         </div>
       </div>
     </section>
 
   </main>
 
+  <!-- ════════════════════════════════════════════════════════════════════════
+       FOOTER
+  ════════════════════════════════════════════════════════════════════════ -->
   <footer id="site-footer" role="contentinfo">
     <div class="container footer-inner">
+
       <div class="footer-brand">
         <a href="#hero" class="nav-logo footer-logo" aria-label="MOSMED — back to top">
-          <img class="logo-img" src="assets/images/logowithouttext.png" data-i18n-alt="logo_alt" alt="MOSMED logo" />
+          <img
+            class="logo-img"
+            src="assets/images/logowithouttext.png"
+            data-i18n-alt="logo_alt"
+            alt="MOSMED logo"
+          />
           <span class="logo-fallback" style="display:none" aria-hidden="true">MOSMED</span>
         </a>
         <p class="footer-tagline" data-i18n="footer_tagline">Robotic technologies in medicine</p>
       </div>
-      <p class="footer-copyright" data-i18n="footer_copyright">© {year} MOSMED. All rights reserved.</p>
+
+      <p class="footer-copyright" data-i18n="footer_copyright">© 2025 MOSMED. All rights reserved.</p>
+
     </div>
   </footer>
 
+  <!-- Scripts -->
   <script src="js/translations.js"></script>
   <script src="js/main.js"></script>
 </body>
